@@ -2,7 +2,7 @@ def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     words = get_num_words(text)
-    num_charecter = get_num_charecter_dict(text)
+    num_charecter = get_num_character_dict(text)
 
     #print report
     print_report(words, num_charecter, book_path)
@@ -31,7 +31,7 @@ def get_num_words(string):
 
 
 #get a dict of {"char": appear n time in text}
-def get_num_charecter_dict(string):
+def get_num_character_dict(string):
     char_num ={}
     for item in string:
         lower = item.lower()
